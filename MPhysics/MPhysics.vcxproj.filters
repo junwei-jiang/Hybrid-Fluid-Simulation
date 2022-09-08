@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CudaContextManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulationConfigManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="CellCenteredScalarGrid.cpp">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorGrid.cpp">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="ScalarField.cpp">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CellCenteredScalarField.cpp">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>Dynamics\Common Data Type\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="ScalarGrid.cpp">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="KNNSearch.cpp">
+      <Filter>Dynamics\Solver\SPH\KNN</Filter>
+    </ClCompile>
+    <ClCompile Include="CellCenteredVectorGrid.cpp">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceCenteredVectorGrid.cpp">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvectionSolver.cpp">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClCompile>
+    <ClCompile Include="SemiLagrangian.cpp">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtParticleGroup.cpp">
+      <Filter>Dynamics\Common Data Type\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorField.cpp">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="CellCenteredVectorField.cpp">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceCenteredVectorField.cpp">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="GridFluidSolver.cpp">
+      <Filter>Dynamics\Solver\Euler\EulerSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalForcesSolver.cpp">
+      <Filter>Dynamics\Solver\Euler\ExternalForces</Filter>
+    </ClCompile>
+    <ClCompile Include="PressureSolver.cpp">
+      <Filter>Dynamics\Solver\Euler\Pressure</Filter>
+    </ClCompile>
+    <ClCompile Include="CubicLagrangeDiscreteGrid.cpp">
+      <Filter>Dynamics\Common Data Type\Grid\CubicLagrangeGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundaryVolumeMap.cpp">
+      <Filter>Dynamics\Common Data Type\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="CuDenseMatrix.cpp">
+      <Filter>Dynamics\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CuDenseVector.cpp">
+      <Filter>Dynamics\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CuMatrixFreePCG.cpp">
+      <Filter>Dynamics\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CuMatVecMultiplier.cpp">
+      <Filter>Dynamics\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CuSparseMatrix.cpp">
+      <Filter>Dynamics\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundaryHelper.cpp">
+      <Filter>Dynamics\Solver\Euler\Boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="EulerParticles.cpp">
+      <Filter>Dynamics\Common Data Type\Particle\EulerParticles</Filter>
+    </ClCompile>
+    <ClCompile Include="HybridSimulator.cpp">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleInCell.cpp">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClCompile>
+    <ClCompile Include="FluidImplicitParticle.cpp">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClCompile>
+    <ClCompile Include="MPhysics.cpp">
+      <Filter>DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="CuSparsePCG.cpp">
+      <Filter>Dynamics\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectiveFluidSolver.cpp">
+      <Filter>Dynamics\Solver\SPH\Projective</Filter>
+    </ClCompile>
+    <ClCompile Include="MixPICAndFLIP.cpp">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClCompile>
+    <ClCompile Include="Boundary.cpp">
+      <Filter>Dynamics\Solver\Euler\Boundary</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CudaContextManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SimulationConfigManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="CellCenteredScalarGrid.h">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorGrid.h">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="ScalarField.h">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="CellCenteredScalarField.h">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="KNNSearch.h">
+      <Filter>Dynamics\Solver\SPH\KNN</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Dynamics\Common Data Type\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="KNNKernel.cuh">
+      <Filter>Dynamics\Solver\SPH\KNN</Filter>
+    </ClInclude>
+    <ClInclude Include="ScalarGrid.h">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="CellCenteredVectorGrid.h">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceCenteredVectorGrid.h">
+      <Filter>Dynamics\Common Data Type\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvectionSolver.h">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClInclude>
+    <ClInclude Include="SemiLagrangian.h">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClInclude>
+    <ClInclude Include="MPhysics.h">
+      <Filter>DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrustWapper.cuh">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MMathExtra.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtParticleGroup.h">
+      <Filter>Dynamics\Common Data Type\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorField.h">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="CellCenteredVectorField.h">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceCenteredVectorField.h">
+      <Filter>Dynamics\Common Data Type\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="GridFluidSolver.h">
+      <Filter>Dynamics\Solver\Euler\EulerSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalForcesSolver.h">
+      <Filter>Dynamics\Solver\Euler\ExternalForces</Filter>
+    </ClInclude>
+    <ClInclude Include="PressureSolver.h">
+      <Filter>Dynamics\Solver\Euler\Pressure</Filter>
+    </ClInclude>
+    <ClInclude Include="CubicLagrangeDiscreteGrid.h">
+      <Filter>Dynamics\Common Data Type\Grid\CubicLagrangeGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="CLDGridKernel.cuh">
+      <Filter>Dynamics\Common Data Type\Grid\CubicLagrangeGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryVolumeMap.h">
+      <Filter>Dynamics\Common Data Type\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryVolumeMapKernel.cuh">
+      <Filter>Dynamics\Common Data Type\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="SPHKernelFunc.cuh">
+      <Filter>Dynamics\Solver\SPH</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussQuadrature.cuh">
+      <Filter>Dynamics\Solver\SPH</Filter>
+    </ClInclude>
+    <ClInclude Include="CLDGridinterpolate.cuh">
+      <Filter>Dynamics\Common Data Type\Grid\CubicLagrangeGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="CuDenseMatrix.h">
+      <Filter>Dynamics\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CuDenseVector.h">
+      <Filter>Dynamics\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CuMatrixFreePCG.h">
+      <Filter>Dynamics\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CuMatVecMultiplier.h">
+      <Filter>Dynamics\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSparseMatrix.h">
+      <Filter>Dynamics\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryHelper.h">
+      <Filter>Dynamics\Solver\Euler\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="EulerParticles.h">
+      <Filter>Dynamics\Common Data Type\Particle\EulerParticles</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldMathTool.cuh">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="EulerParticlesTool.cuh">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="DensityConstraintKernel.cuh">
+      <Filter>Dynamics\Solver\SPH\Projective</Filter>
+    </ClInclude>
+    <ClInclude Include="HybridSimulator.h">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="HybridSimulatorKernel.cuh">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="EulerMathTool.cuh">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleKernel.cuh">
+      <Filter>Dynamics\Common Data Type\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleInCell.h">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClInclude>
+    <ClInclude Include="FluidImplicitParticle.h">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClInclude>
+    <ClInclude Include="CuSparsePCG.h">
+      <Filter>Dynamics\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="EulerSolverTool.cuh">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaMathTools.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectiveFluidSolver.h">
+      <Filter>Dynamics\Solver\SPH\Projective</Filter>
+    </ClInclude>
+    <ClInclude Include="MixPICAndFLIP.h">
+      <Filter>Dynamics\Solver\Euler\Advection</Filter>
+    </ClInclude>
+    <ClInclude Include="Boundary.h">
+      <Filter>Dynamics\Solver\Euler\Boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryTool.cuh">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DLL">
+      <UniqueIdentifier>{4169af5a-5299-4541-9a0b-69342aa84419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics">
+      <UniqueIdentifier>{1f316524-0b2e-4089-a0ad-b3223fdf31bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Math">
+      <UniqueIdentifier>{ae627f4d-396c-47b2-871d-cb5bce678a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{825971b6-003e-4926-a30a-a9573e08a645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Common Data Type">
+      <UniqueIdentifier>{754caaa4-92d8-4e31-b653-64b6f8733b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Common Data Type\Grid">
+      <UniqueIdentifier>{08aca88e-b090-4af6-b5ab-cec6d6c45fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Common Data Type\Particle">
+      <UniqueIdentifier>{fb4441a7-4eb8-456f-8e16-21e2bc365c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Common Data Type\Field">
+      <UniqueIdentifier>{4906fa6e-db27-4405-96f0-69bc4e051a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{293d4b33-e4ea-4a27-a4c7-fc6dbfb23b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Common Data Type\Boundary">
+      <UniqueIdentifier>{7ccb4734-533c-443a-a090-b93ccf6d943f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Simulator">
+      <UniqueIdentifier>{d05e62b5-53c2-475f-a094-f0655a7628ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Simulator\Hybrid">
+      <UniqueIdentifier>{dfc8d34f-6328-457c-99c9-ff8902921c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Common Data Type\Grid\CubicLagrangeGrid">
+      <UniqueIdentifier>{881a52cc-749e-4bce-b411-53319a403723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver">
+      <UniqueIdentifier>{66ced2da-0725-4c2c-a4d1-1c059b691d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\SPH">
+      <UniqueIdentifier>{67dd7d43-8cc5-42ec-9092-ab5b96cd931d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\SPH\KNN">
+      <UniqueIdentifier>{605e2f4f-65d9-4305-83d8-83cc9dff3af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\SPH\Projective">
+      <UniqueIdentifier>{b22233c9-cde8-4a16-9858-2d66112b381e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\Euler">
+      <UniqueIdentifier>{e163853f-4d07-4a60-a253-418eb2371131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\Euler\Advection">
+      <UniqueIdentifier>{839261bd-26e1-4664-9c5d-9bd79308c806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\Euler\EulerSolver">
+      <UniqueIdentifier>{892ff1d4-dc55-46c8-beae-25198797ac17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\Euler\ExternalForces">
+      <UniqueIdentifier>{6f83ff6c-9757-416e-bc94-d8a910be764a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\Euler\Pressure">
+      <UniqueIdentifier>{a13c1b10-0504-4979-9655-7c289ac29227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\Euler\Boundary">
+      <UniqueIdentifier>{6f8c4fce-b951-4950-95a7-ed18dd218e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Solver\Euler\CudaHelper">
+      <UniqueIdentifier>{8b297492-3696-4d5a-9578-fc20ad8e63ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics\Common Data Type\Particle\EulerParticles">
+      <UniqueIdentifier>{f50a2fa1-bc29-4af3-b762-1f3981700128}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="KNNKernel.cu">
+      <Filter>Dynamics\Solver\SPH\KNN</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ThrustWapper.cu">
+      <Filter>Common</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CLDGridFillCellRelativeNodeIndex.cu">
+      <Filter>Dynamics\Common Data Type\Grid\CubicLagrangeGrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="SPHKernelFunc.cu">
+      <Filter>Dynamics\Solver\SPH</Filter>
+    </CudaCompile>
+    <CudaCompile Include="GaussQuadrature.cu">
+      <Filter>Dynamics\Solver\SPH</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CLDGridInterpolateForLargeScaleDataset.cu">
+      <Filter>Dynamics\Common Data Type\Grid\CubicLagrangeGrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="CLDGridinterpolate.cu">
+      <Filter>Dynamics\Common Data Type\Grid\CubicLagrangeGrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="BoundaryVolumeMapGenVolumeData.cu">
+      <Filter>Dynamics\Common Data Type\Boundary</Filter>
+    </CudaCompile>
+    <CudaCompile Include="BondaryVolumeMapQueryVolumeAndPoint.cu">
+      <Filter>Dynamics\Common Data Type\Boundary</Filter>
+    </CudaCompile>
+    <CudaCompile Include="FieldMathTool.cu">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </CudaCompile>
+    <CudaCompile Include="EulerParticlesTool.cu">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DensityConstraintExtDynamics.cu">
+      <Filter>Dynamics\Solver\SPH\Projective</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DensityConstraintInertiaTerm.cu">
+      <Filter>Dynamics\Solver\SPH\Projective</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DensityConstraintSolver.cu">
+      <Filter>Dynamics\Solver\SPH\Projective</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HybridSimulatorMixParitcleVelWithPICAndFLIP.cu">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HybridSimulatorGenParticleByPoissonDisk.cu">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="EulerMathTool.cu">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ParticleKernel.cu">
+      <Filter>Dynamics\Common Data Type\Particle</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DensityConstraintComputeA.cu">
+      <Filter>Dynamics\Solver\SPH\Projective</Filter>
+    </CudaCompile>
+    <CudaCompile Include="EulerSolverTool.cu">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HybridSimulatorMixFieldWithDensity.cu">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HybridSimulatorSamplingSDFFromCLDGrid.cu">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HybridSimulatorDeleteParticleUnderWater.cu">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HybridSimulatorBuildSDF.cu">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HybridSimulatorPredict.cu">
+      <Filter>Dynamics\Simulator\Hybrid</Filter>
+    </CudaCompile>
+    <CudaCompile Include="BoundaryTool.cu">
+      <Filter>Dynamics\Solver\Euler\CudaHelper</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

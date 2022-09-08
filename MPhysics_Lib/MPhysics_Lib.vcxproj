@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\sdf\SDF.vcxproj">
+      <Project>{245059d5-3a7c-3ab0-b0c2-527b8aec47cc}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MPhysics\AdvectionSolver.cpp" />
+    <ClCompile Include="..\MPhysics\Boundary.cpp" />
+    <ClCompile Include="..\MPhysics\BoundaryHelper.cpp" />
+    <ClCompile Include="..\MPhysics\BoundaryVolumeMap.cpp" />
+    <ClCompile Include="..\MPhysics\CellCenteredScalarField.cpp" />
+    <ClCompile Include="..\MPhysics\CellCenteredScalarGrid.cpp" />
+    <ClCompile Include="..\MPhysics\CellCenteredVectorField.cpp" />
+    <ClCompile Include="..\MPhysics\CellCenteredVectorGrid.cpp" />
+    <ClCompile Include="..\MPhysics\CubicLagrangeDiscreteGrid.cpp" />
+    <ClCompile Include="..\MPhysics\CudaContextManager.cpp" />
+    <ClCompile Include="..\MPhysics\CuDenseMatrix.cpp" />
+    <ClCompile Include="..\MPhysics\CuDenseVector.cpp" />
+    <ClCompile Include="..\MPhysics\CuMatrixFreePCG.cpp" />
+    <ClCompile Include="..\MPhysics\CuMatVecMultiplier.cpp" />
+    <ClCompile Include="..\MPhysics\CuSparseMatrix.cpp" />
+    <ClCompile Include="..\MPhysics\CuSparsePCG.cpp" />
+    <ClCompile Include="..\MPhysics\EulerParticles.cpp" />
+    <ClCompile Include="..\MPhysics\ExternalForcesSolver.cpp" />
+    <ClCompile Include="..\MPhysics\ExtParticleGroup.cpp" />
+    <ClCompile Include="..\MPhysics\FaceCenteredVectorField.cpp" />
+    <ClCompile Include="..\MPhysics\FaceCenteredVectorGrid.cpp" />
+    <ClCompile Include="..\MPhysics\Field.cpp" />
+    <ClCompile Include="..\MPhysics\FluidImplicitParticle.cpp" />
+    <ClCompile Include="..\MPhysics\Grid.cpp" />
+    <ClCompile Include="..\MPhysics\GridFluidSolver.cpp" />
+    <ClCompile Include="..\MPhysics\HybridSimulator.cpp" />
+    <ClCompile Include="..\MPhysics\KNNSearch.cpp" />
+    <ClCompile Include="..\MPhysics\MixPICAndFLIP.cpp" />
+    <ClCompile Include="..\MPhysics\Particle.cpp" />
+    <ClCompile Include="..\MPhysics\ParticleInCell.cpp" />
+    <ClCompile Include="..\MPhysics\PressureSolver.cpp" />
+    <ClCompile Include="..\MPhysics\ProjectiveFluidSolver.cpp" />
+    <ClCompile Include="..\MPhysics\ScalarField.cpp" />
+    <ClCompile Include="..\MPhysics\ScalarGrid.cpp" />
+    <ClCompile Include="..\MPhysics\SceneManager.cpp" />
+    <ClCompile Include="..\MPhysics\SemiLagrangian.cpp" />
+    <ClCompile Include="..\MPhysics\SimulationConfigManager.cpp" />
+    <ClCompile Include="..\MPhysics\VectorField.cpp" />
+    <ClCompile Include="..\MPhysics\VectorGrid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MPhysics\AdvectionSolver.h" />
+    <ClInclude Include="..\MPhysics\Boundary.h" />
+    <ClInclude Include="..\MPhysics\BoundaryHelper.h" />
+    <ClInclude Include="..\MPhysics\BoundaryTool.cuh" />
+    <ClInclude Include="..\MPhysics\BoundaryVolumeMap.h" />
+    <ClInclude Include="..\MPhysics\BoundaryVolumeMapKernel.cuh" />
+    <ClInclude Include="..\MPhysics\CellCenteredScalarField.h" />
+    <ClInclude Include="..\MPhysics\CellCenteredScalarGrid.h" />
+    <ClInclude Include="..\MPhysics\CellCenteredVectorField.h" />
+    <ClInclude Include="..\MPhysics\CellCenteredVectorGrid.h" />
+    <ClInclude Include="..\MPhysics\CLDGridinterpolate.cuh" />
+    <ClInclude Include="..\MPhysics\CLDGridKernel.cuh" />
+    <ClInclude Include="..\MPhysics\Common.h" />
+    <ClInclude Include="..\MPhysics\CubicLagrangeDiscreteGrid.h" />
+    <ClInclude Include="..\MPhysics\CudaContextManager.h" />
+    <ClInclude Include="..\MPhysics\CudaMathTools.h" />
+    <ClInclude Include="..\MPhysics\CuDenseMatrix.h" />
+    <ClInclude Include="..\MPhysics\CuDenseVector.h" />
+    <ClInclude Include="..\MPhysics\CuMatrixFreePCG.h" />
+    <ClInclude Include="..\MPhysics\CuMatVecMultiplier.h" />
+    <ClInclude Include="..\MPhysics\CuSparseMatrix.h" />
+    <ClInclude Include="..\MPhysics\CuSparsePCG.h" />
+    <ClInclude Include="..\MPhysics\DensityConstraintKernel.cuh" />
+    <ClInclude Include="..\MPhysics\EnumType.h" />
+    <ClInclude Include="..\MPhysics\EulerMathTool.cuh" />
+    <ClInclude Include="..\MPhysics\EulerParticles.h" />
+    <ClInclude Include="..\MPhysics\EulerParticlesTool.cuh" />
+    <ClInclude Include="..\MPhysics\EulerSolverTool.cuh" />
+    <ClInclude Include="..\MPhysics\ExternalForcesSolver.h" />
+    <ClInclude Include="..\MPhysics\ExtParticleGroup.h" />
+    <ClInclude Include="..\MPhysics\FaceCenteredVectorField.h" />
+    <ClInclude Include="..\MPhysics\FaceCenteredVectorGrid.h" />
+    <ClInclude Include="..\MPhysics\Field.h" />
+    <ClInclude Include="..\MPhysics\FieldMathTool.cuh" />
+    <ClInclude Include="..\MPhysics\FluidImplicitParticle.h" />
+    <ClInclude Include="..\MPhysics\GaussQuadrature.cuh" />
+    <ClInclude Include="..\MPhysics\GPUTimer.h" />
+    <ClInclude Include="..\MPhysics\Grid.h" />
+    <ClInclude Include="..\MPhysics\GridFluidSolver.h" />
+    <ClInclude Include="..\MPhysics\HybridSimulator.h" />
+    <ClInclude Include="..\MPhysics\HybridSimulatorKernel.cuh" />
+    <ClInclude Include="..\MPhysics\KNNKernel.cuh" />
+    <ClInclude Include="..\MPhysics\KNNSearch.h" />
+    <ClInclude Include="..\MPhysics\Manager.h" />
+    <ClInclude Include="..\MPhysics\MixPICAndFLIP.h" />
+    <ClInclude Include="..\MPhysics\MMathExtra.h" />
+    <ClInclude Include="..\MPhysics\Particle.h" />
+    <ClInclude Include="..\MPhysics\ParticleInCell.h" />
+    <ClInclude Include="..\MPhysics\ParticleKernel.cuh" />
+    <ClInclude Include="..\MPhysics\PressureSolver.h" />
+    <ClInclude Include="..\MPhysics\ProjectiveFluidSolver.h" />
+    <ClInclude Include="..\MPhysics\ScalarField.h" />
+    <ClInclude Include="..\MPhysics\ScalarGrid.h" />
+    <ClInclude Include="..\MPhysics\SceneManager.h" />
+    <ClInclude Include="..\MPhysics\SemiLagrangian.h" />
+    <ClInclude Include="..\MPhysics\SimulationConfigManager.h" />
+    <ClInclude Include="..\MPhysics\SPHKernelFunc.cuh" />
+    <ClInclude Include="..\MPhysics\ThrustWapper.cuh" />
+    <ClInclude Include="..\MPhysics\VectorField.h" />
+    <ClInclude Include="..\MPhysics\VectorGrid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\MPhysics\BondaryVolumeMapQueryVolumeAndPoint.cu" />
+    <CudaCompile Include="..\MPhysics\BoundaryTool.cu" />
+    <CudaCompile Include="..\MPhysics\BoundaryVolumeMapGenVolumeData.cu" />
+    <CudaCompile Include="..\MPhysics\CLDGridFillCellRelativeNodeIndex.cu" />
+    <CudaCompile Include="..\MPhysics\CLDGridinterpolate.cu" />
+    <CudaCompile Include="..\MPhysics\CLDGridInterpolateForLargeScaleDataset.cu" />
+    <CudaCompile Include="..\MPhysics\DensityConstraintComputeA.cu" />
+    <CudaCompile Include="..\MPhysics\DensityConstraintExtDynamics.cu" />
+    <CudaCompile Include="..\MPhysics\DensityConstraintInertiaTerm.cu" />
+    <CudaCompile Include="..\MPhysics\DensityConstraintSolver.cu" />
+    <CudaCompile Include="..\MPhysics\EulerMathTool.cu" />
+    <CudaCompile Include="..\MPhysics\EulerParticlesTool.cu" />
+    <CudaCompile Include="..\MPhysics\EulerSolverTool.cu" />
+    <CudaCompile Include="..\MPhysics\FieldMathTool.cu" />
+    <CudaCompile Include="..\MPhysics\GaussQuadrature.cu" />
+    <CudaCompile Include="..\MPhysics\HybridSimulatorBuildSDF.cu" />
+    <CudaCompile Include="..\MPhysics\HybridSimulatorDeleteParticleUnderWater.cu" />
+    <CudaCompile Include="..\MPhysics\HybridSimulatorGenParticleByPoissonDisk.cu" />
+    <CudaCompile Include="..\MPhysics\HybridSimulatorMixFieldWithDensity.cu" />
+    <CudaCompile Include="..\MPhysics\HybridSimulatorMixParitcleVelWithPICAndFLIP.cu" />
+    <CudaCompile Include="..\MPhysics\HybridSimulatorSamplingSDFFromCLDGrid.cu" />
+    <CudaCompile Include="..\MPhysics\KNNKernel.cu" />
+    <CudaCompile Include="..\MPhysics\ParticleKernel.cu" />
+    <CudaCompile Include="..\MPhysics\SPHKernelFunc.cu" />
+    <CudaCompile Include="..\MPhysics\ThrustWapper.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\MPhysics\packages.config" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D4A1F3E-CC5B-4431-9DCC-FE02C3B37227}</ProjectGuid>
+    <RootNamespace>MPhysics_Lib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.3.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;TEST;MPHYSICS;WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;TEST;MPHYSICS;WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.3.targets" />
+    <Import Project="..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets" Condition="Exists('..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" />
+    <Import Project="..\packages\Assimp.3.0.0\build\native\Assimp.targets" Condition="Exists('..\packages\Assimp.3.0.0\build\native\Assimp.targets')" />
+    <Import Project="..\packages\boost.1.72.0.0\build\boost.targets" Condition="Exists('..\packages\boost.1.72.0.0\build\boost.targets')" />
+    <Import Project="..\packages\boost_serialization-vc141.1.72.0.0\build\boost_serialization-vc141.targets" Condition="Exists('..\packages\boost_serialization-vc141.1.72.0.0\build\boost_serialization-vc141.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\Assimp.3.0.0\build\native\Assimp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Assimp.3.0.0\build\native\Assimp.targets'))" />
+    <Error Condition="!Exists('..\packages\boost.1.72.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.72.0.0\build\boost.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_serialization-vc141.1.72.0.0\build\boost_serialization-vc141.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_serialization-vc141.1.72.0.0\build\boost_serialization-vc141.targets'))" />
+  </Target>
+</Project>
