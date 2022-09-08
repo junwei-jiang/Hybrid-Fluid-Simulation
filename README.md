@@ -10,5 +10,5 @@ A large scale real-time fluid simulation project, which uses mixed Lagrangian pa
 The following videos were generated using this engine:
 
 :---:|:---:
-[![Video]](https://www.youtube.com/watch?v=qa5ktKb7NkE) | [![Video]](https://www.youtube.com/watch?v=7Rut2-70xjY)
+[![Video](https://github.com/junwei-jiang/Hybrid-Fluid-Simulation/blob/main/images/Hybrid%20Fluid%20(Particles%20and%20Grids).png)](https://www.youtube.com/watch?v=qa5ktKb7NkE) | [![Video](https://github.com/junwei-jiang/Hybrid-Fluid-Simulation/blob/main/images/Hybrid%20Fluid%20(Multiple%20dynamic%20boundaries%20for%20grids).png)](https://www.youtube.com/watch?v=7Rut2-70xjY)
 
