@@ -1,0 +1,175 @@
+{
+  "SimulationConfig": {
+    "Gravity": 9.8,
+    "TimeStep": 0.033,
+    "SimulationRange": {
+      "Start": {
+        "x": -20,
+        "y": -20,
+        "z": -20
+      },
+      "End": {
+        "x": 20,
+        "y": 20,
+        "z": 20
+      }
+    }
+  },
+  "HybridSimulator": [
+    {
+      "Name": "TestSimulator",
+      "DistanceDamp": 0.667,
+      "MixSubstepCount": 3,
+      "GRate": 1,
+      "GFRate": 2,
+      "FRate": 4,
+      "PRate": 6,
+      "CreateRate": 3.0,
+      "DeleteRate": 6.0,
+      "TimeDeleteRate": 10.0,
+      "ParticleRadius": 0.03,
+      "MaxParticleCount": 500000,
+      "ProjectiveSolver": {
+        "PFMaxIterationCount": 3,
+        "PFProjectMaxIterationCount": 20,
+        "PFProjectErrorThreshold": 1e-14
+      },
+      "GridSolver": {
+        "DeltaT": 0.05,
+        "AdvectionSolver": {
+          "Type": "MixPICAndFLIP",
+          "CFLNumber": 1,
+          "MixingCoefficient": 0.01,
+          "PGTransferAlg": "TRILINEAR",
+          "NumOfParticlesPerCell": 8
+        },
+        "GridResolution": {
+          "x": 64,
+          "y": 32,
+          "z": 32
+        },
+        "SimulationDomain": {
+          "Start": {
+            "x": -2.0,
+            "y": -1.0,
+            "z": -1.0
+          },
+          "End": {
+            "x": 2.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "EulerFluidDomain": [
+          {
+            "Range": {
+              "Start": {
+                "x": -2.0,
+                "y": -1.0,
+                "z": -1.0
+              },
+              "End": {
+                "x": -1.0,
+                "y": 1.0,
+                "z": 0.0
+              }
+            }
+          }
+        ]
+      },
+      "Boundary": [
+        {
+          "Mesh": [
+            {
+              "Path": "Assets/Resources/Models/Cube.obj",
+              "Scalar": {
+                "x": 4,
+                "y": 2,
+                "z": 2
+              },
+              "Pos": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "Rotation": [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+            }
+          ],
+          "Resolution": {
+            "x": 64,
+            "y": 64,
+            "z": 64
+          },
+          "InvOutSide": false,
+          "IsDynamic": false
+        },
+        {
+          "Mesh": [
+            {
+              "Path": "Assets/Resources/Models/InvCube.obj",
+              "Scalar": {
+                "x": 1,
+                "y": 2,
+                "z": 1
+              },
+              "Pos": {
+                "x": 0,
+                "y": 0,
+                "z": -0.5
+              },
+              "Rotation": [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+            }
+          ],
+          "Resolution": {
+            "x": 64,
+            "y": 64,
+            "z": 64
+          },
+          "InvOutSide": false,
+          "IsDynamic": false
+        },
+        {
+          "Mesh": [
+            {
+              "Path": "Assets/Resources/Models/InvCube2.obj",
+              "Scalar": {
+                "x": 1,
+                "y": 2,
+                "z": 1
+              },
+              "Pos": {
+                "x": 1.5,
+                "y": 0,
+                "z": 0.5
+              },
+              "Rotation": [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+            }
+          ],
+          "Resolution": {
+            "x": 64,
+            "y": 64,
+            "z": 64
+          },
+          "InvOutSide": false,
+          "IsDynamic": false
+        }
+      ],
+      "ParticleBlock": [
+        {
+          "Range": {
+            "Start": {
+              "x": 3.7,
+              "y": 2.0,
+              "z": 3.7
+            },
+            "End": {
+              "x": 3.8,
+              "y": 2.1,
+              "z": 3.8
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

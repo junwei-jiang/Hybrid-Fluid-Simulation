@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Particle.vs">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="Particle.fs">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="TestScene.json" />
+    <None Include="Model.fs">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="Model.vs">
+      <Filter>shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shader">
+      <UniqueIdentifier>{6832e1ff-d02d-456d-bbef-dcb0d535d8dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

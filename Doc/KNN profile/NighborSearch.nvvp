@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<session version="2" name="NighborSearch.nvvp" hscale="1.0E-6" normalize="false">
+<timelineoptions enabletimerange="false" start="-1" end="-1" numsegmentsuvm="100" uvmisegmentenabled="true"/>
+<expert><columnprops><column kind="NAME" width="387"/></columnprops>
+<columnorder><column kind="NAME"/><column kind="INVOCATIONS"/><column kind="START_TIME"/><column kind="DURATION"/><column kind="AVG_DURATION"/><column kind="GRID_SIZE"/><column kind="BLOCK_SIZE"/><column kind="REGS_PER_THREAD"/><column kind="STAT_SHARED_MEM"/><column kind="DYNA_SHARED_MEM"/><column kind="AVG_DYNA_SHARED_MEM"/><column kind="BYTE_SIZE"/><column kind="THROUGHPUT"/></columnorder>
+</expert>
+<analysis guided="false"></analysis>
+<expertsystem current="INTRO"><visited><stage name="INTRO"/></visited></expertsystem>
+<vruler width="200"/>
+<hruler>
+</hruler>
+<timelinestate>
+<timeline pathname="IntegrationTest-NeighborSearch.exe" kind="PROCESS" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="IntegrationTest-NeighborSearch.exe/7568" kind="THREAD" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="IntegrationTest-NeighborSearch.exe/7568/Runtime API" kind="RUNTIME" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="IntegrationTest-NeighborSearch.exe/7568/Driver API" kind="DRIVER" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="IntegrationTest-NeighborSearch.exe/Profiling Overhead" kind="OVERHEADS" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080" kind="DEVICE" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1" kind="CONTEXT" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/MemCpy (HtoD)" kind="MEMCPY_HTOD" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/MemCpy (DtoH)" kind="MEMCPY_DTOH" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute" kind="KERNELS" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/neighborhoodQuery(float const *, unsigned int, float const *, unsigned int const *, unsigned int, SGridInfo, unsigned int const *, unsigned int const *, unsigned int, unsigned int*, unsigned int*)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/:cuda_cub::core::_kernel_agent&#60;thrust::cuda_cub::__scan::ScanAgent&#60;unsigned int*, unsigned int*, thrust::plus&#60;unsigned int&#62;, int, unsigned int, thrust::detail::integral_constant&#60;bool, bool=0&#62;&#62;, unsigned int*, unsigned int*, thrust::plus&#60;unsigned int&#62;, int, cub::ScanTileState&#60;unsigned int, bool=1&#62;, thrust::cuda_cub::__scan::AddInitToExclusiveScan&#60;unsigned int, thrust::plus&#60;unsigned int&#62;&#62;&#62;(unsigned int*, unsigned int, thrust::plus&#60;unsigned int&#62;, int, unsigned int, bool)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/insertParticlesToMortonCell(float const *, unsigned int, SGridInfo, unsigned int*, unsigned int*, unsigned int*)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/countingSortIndices(SGridInfo, unsigned int const *, unsigned int const *, unsigned int const *, unsigned int, unsigned int*)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/:cuda_cub::core::_kernel_agent&#60;thrust::cuda_cub::__parallel_for::ParallelForAgent&#60;thrust::cuda_cub::__transform::unary_transform_f&#60;thrust::permutation_iterator&#60;thrust::detail::normal_iterator&#60;thrust::device_ptr&#60;float const &#62;&#62;, thrust::detail::normal_iterator&#60;thrust::device_ptr&#60;unsigned int const &#62;&#62;&#62;, thrust::detail::normal_iterator&#60;thrust::device_ptr&#60;float&#62;&#62;, thrust::cuda_cub::__transform::no_stencil_tag, thrust::cuda_cub::identity, thrust::cuda_cub::__transform::always_true_predicate&#62;, __int64&#62;, thrust::cuda_cub::__transform::unary_transform_f&#60;thrust::permutation_iterator&#60;thrust::detail::normal_iterator&#60;thrust::device_ptr&#60;float const &#62;&#62;, thrust::detail::normal_iterator&#60;thrust::device_ptr&#60;unsigned int const &#62;&#62;&#62;, thrust::detail::normal_iterator&#60;thrust::device_ptr&#60;float&#62;&#62;, thrust::cuda_cub::__tra" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/:cuda_cub::core::_kernel_agent&#60;thrust::cuda_cub::__parallel_for::ParallelForAgent&#60;thrust::cuda_cub::__uninitialized_fill::functor&#60;thrust::device_ptr&#60;unsigned int&#62;, unsigned int&#62;, __int64&#62;, thrust::cuda_cub::__uninitialized_fill::functor&#60;thrust::device_ptr&#60;unsigned int&#62;, unsigned int&#62;, __int64&#62;(thrust::device_ptr&#60;unsigned int&#62;, unsigned int)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/ComputeMinMax(float const *, unsigned int, float)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/:cuda_cub::core::_kernel_agent&#60;thrust::cuda_cub::__scan::InitAgent&#60;cub::ScanTileState&#60;unsigned int, bool=1&#62;, int&#62;, cub::ScanTileState&#60;unsigned int, bool=1&#62;, int&#62;(bool=1, cub::ScanTileState&#60;unsigned int, bool=1&#62;)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/:cuda_cub::core::_kernel_agent&#60;thrust::cuda_cub::__parallel_for::ParallelForAgent&#60;thrust::cuda_cub::__uninitialized_fill::functor&#60;thrust::device_ptr&#60;float&#62;, float&#62;, __int64&#62;, thrust::cuda_cub::__uninitialized_fill::functor&#60;thrust::device_ptr&#60;float&#62;, float&#62;, __int64&#62;(thrust::device_ptr&#60;float&#62;, float)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Compute/memset (0)" kind="KERNEL" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Streams" kind="STREAMS" containerstate="OPEN_ALL" filtered="false"/>
+<timeline pathname="NVIDIA GeForce GTX 1080/1/Streams/7" kind="STREAM" containerstate="OPEN_ALL" filtered="false"/>
+</timelinestate>
+<timelinepdm>
+<pdm></pdm>
+</timelinepdm>
+<analysispdm>
+</analysispdm>
+</session>

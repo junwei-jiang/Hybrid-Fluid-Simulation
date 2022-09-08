@@ -1,0 +1,139 @@
+{
+  "SimulationConfig": {
+    "Gravity": 9.8,
+    "TimeStep": 0.033,
+    "SimulationRange": {
+      "Start": {
+        "x": -20,
+        "y": -20,
+        "z": -20
+      },
+      "End": {
+        "x": 20,
+        "y": 20,
+        "z": 20
+      }
+    }
+  },
+  "HybridSimulator": [
+    {
+      "Name": "TestSimulator",
+      "DistanceDamp": 0.667,
+      "MixSubstepCount": 3,
+      "GRate": 1,
+      "GFRate": 2,
+      "FRate": 4,
+      "PRate": 6,
+      "CreateRate": 3.0,
+      "DeleteRate": 6.0,
+      "TimeDeleteRate": 10.0,
+      "ParticleRadius": 0.03,
+      "MaxParticleCount": 500000,
+      "ProjectiveSolver": {
+        "PFMaxIterationCount": 3,
+        "PFProjectMaxIterationCount": 20,
+        "PFProjectErrorThreshold": 1e-14
+      },
+      "GridSolver": {
+        "DeltaT": 0.033,
+        "AdvectionSolver": {
+          "Type": "MixPICAndFLIP",
+          "CFLNumber": 1.0,
+          "MixingCoefficient": 0.1,
+          "PGTransferAlg": "LINEAR",
+          "NumOfParticlesPerCell": 16
+        },
+        "GridResolution": {
+          "x": 32,
+          "y": 12,
+          "z": 24
+        },
+        "SimulationDomain": {
+          "Start": {
+            "x": -8.0,
+            "y": -3.0,
+            "z": -6.0
+          },
+          "End": {
+            "x": 8.0,
+            "y": 3.0,
+            "z": 6.0
+          }
+        },
+        "EulerFluidDomain": [
+          {
+            "Range": {
+              "Start": {
+                "x": 3.0,
+                "y": -3.0,
+                "z": -5.0
+              },
+              "End": {
+                "x": 7.0,
+                "y": 2.0,
+                "z": 5.0
+              }
+            }
+          }
+        ]
+      },
+      "Boundary": [
+        {
+          "Mesh": [
+            {
+              "Path": "Assets/Resources/Models/Cube.obj",
+              "Scalar": {
+                "x": 16,
+                "y": 6,
+                "z": 12
+              },
+              "Pos": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "Rotation": [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+            },
+            {
+              "Path": "Assets/Resources/Models/Stones/S_AC4A4333c.OBJ",
+              "Scalar": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 0.1
+              },
+              "Pos": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "Rotation": [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+            }
+          ],
+          "Resolution": {
+            "x": 64,
+            "y": 64,
+            "z": 64
+          },
+          "InvOutSide": false,
+          "IsDynamic": false
+        }
+      ],
+      "ParticleBlock": [
+        {
+          "Range": {
+            "Start": {
+              "x": 3.7,
+              "y": 2.0,
+              "z": 3.7
+            },
+            "End": {
+              "x": 3.8,
+              "y": 2.1,
+              "z": 3.8
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

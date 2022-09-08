@@ -1,0 +1,140 @@
+{
+  "SimulationConfig": {
+    "Gravity": 9.8,
+    "TimeStep": 0.016667,
+    "SimulationRange": {
+      "Start": {
+        "x": -8.0,
+        "y": -4.0,
+        "z": -8.0
+      },
+      "End": {
+        "x": 8.0,
+        "y": 12.0,
+        "z": 8.0
+      }
+    }
+  },
+  "HybridSimulator": [
+    {
+      "Name": "TestSimulator",
+      "DistanceDamp": 0.667,
+      "MixSubstepCount": 6,
+      "GRate": 1.0,
+      "GFRate": 2.0,
+      "FRate": 4.0,
+      "PRate": 6.0,
+      "CreateRate": 3.0,
+      "DeletRate": 6.0,
+      "TimeDeleteRate": 10.0,
+      "ParticleRadius": 0.025,
+      "ParticleMass": 1,
+      "ProjectiveSolver": {
+        "PFMaxIterationCount": 6,
+        "PFProjectMaxIterationCount": 20,
+        "PFProjectErrorThreshold": 1e-8,
+        "MaxTimeStep": 0.005,
+        "MinTimeStep": 0.0001
+      },
+      "GridSolver": {
+        "DeltaT": 0.02,
+        "AdvectionSolver": {
+          "Type": "FLIP",
+          "NumOfParticlesPerCell": 8
+        },
+        "GridResolution": {
+          "x": 32,
+          "y": 32,
+          "z": 32
+        },
+        "GridMin": {
+          "x": -1.2,
+          "y": -1.2,
+          "z": -1.2
+        },
+        "GridMax": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        },
+        "EulerFluidDomain": [
+          {
+            "Range": {
+              "Start": {
+                "x": 0.0,
+                "y": -1.0,
+                "z": -1.0
+              },
+              "End": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          }
+        ]
+      },
+      "Boudary": [
+        {
+          "Path": "./Cube.obj",
+          "Resolution": {
+            "x": 64,
+            "y": 64,
+            "z": 64
+          },
+          "InvOutSide": true,
+          "IsDynamic": false,
+          "Scalar": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "ParticleBlock": [
+        {
+          "Range": {
+            "Start": {
+              "x": -3.7,
+              "y": 0.0,
+              "z": -3.7
+            },
+            "End": {
+              "x": 3.7,
+              "y": 0.8,
+              "z": -0.5
+            }
+          }
+        },
+        {
+          "Range": {
+            "Start": {
+              "x": -3.7,
+              "y": 0.0,
+              "z": 0.5
+            },
+            "End": {
+              "x": 3.7,
+              "y": 0.8,
+              "z": 3.7
+            }
+          }
+        },
+        {
+          "Range": {
+            "Start": {
+              "x": 1.5,
+              "y": 7.5,
+              "z": 1.5
+            },
+            "End": {
+              "x": 2.5,
+              "y": 7.9,
+              "z": 2.5
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
