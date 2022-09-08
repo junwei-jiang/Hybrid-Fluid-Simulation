@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>DX12</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Application.cpp">
+      <Filter>DX12</Filter>
+    </ClCompile>
+    <ClCompile Include="DX12CudaSample.cpp">
+      <Filter>DX12</Filter>
+    </ClCompile>
+    <ClCompile Include="simpleD3D12.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shaders.hlsl">
+      <Filter>DX12</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderStructs.h">
+      <Filter>DX12</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>DX12</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Application.h">
+      <Filter>DX12</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx12.h">
+      <Filter>DX12</Filter>
+    </ClInclude>
+    <ClInclude Include="DX12CudaSample.h">
+      <Filter>DX12</Filter>
+    </ClInclude>
+    <ClInclude Include="DXSampleHelper.h">
+      <Filter>DX12</Filter>
+    </ClInclude>
+    <ClInclude Include="simpleD3D12.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DX12">
+      <UniqueIdentifier>{52fc4cfc-c6f8-4958-8a78-3f516aa1b80d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="sinewave_cuda.cu">
+      <Filter>DX12</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
